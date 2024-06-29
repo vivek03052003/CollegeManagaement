@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule Meeting</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Sign In</a></li>
+        <li><a href="/login" class="logout">Log Out</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <header>Schedule Meeting</header>
+      <form action="/schedule_meeting" method="post" class="form">
+        <div class="input-box">
+          <label>Meeting Title</label>
+          <input type="text" name="title" placeholder="Enter meeting title" required />
+        </div>
+        <div class="input-box">
+          <label>Date</label>
+          <input type="date" name="date" required />
+        </div>
+        <div class="input-box">
+          <label>Time</label>
+          <input type="time" name="time" required />
+        </div>
+        <div class="input-box">
+          <label>Description</label>
+          <textarea name="description" placeholder="Enter description" required></textarea>
+        </div>
+        <button type="submit">Schedule</button>
+      </form>
+    </section>
+  </body>
+</html>

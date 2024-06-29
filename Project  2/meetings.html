@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduled Meetings</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Sign In</a></li>
+        <li><a href="/logout">Log Out</a></li>
+    </ul>
+</nav>
+<section class="container">
+    <header>Scheduled Meetings</header>
+    <table border="1" align="center">
+        <thead>
+        <tr>
+            <th>Meeting Name</th>
+            <th>Description</th>
+            <th>Meeting Type</th>
+            <th>Date</th>
+            <th>Duration</th>
+            <th>Time</th>
+            <th>Participants</th>
+            <th>College ID</th>
+            <th>Email ID</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="meeting : ${meetings}">
+            <td th:text="${meeting.Mname}"></td>
+            <td th:text="${meeting.Mdescrip}"></td>
+            <td th:text="${meeting.Mtype}"></td>
+            <td th:text="${meeting.Sday} + ' ' + ${meeting.SMonth} + ' ' + ${meeting.Syear}"></td>
+            <td th:text="${meeting.DurationH}"></td>
+            <td th:text="${meeting.Stimeh} + ':' + ${meeting.Stimem} + ' ' + ${meeting.StimeAMPM}"></td>
+            <td th:text="${meeting.Nofpat}"></td>
+            <td th:text="${meeting.Collegeid}"></td>
+            <td th:text="${meeting.Emailid}"></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
