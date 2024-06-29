@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/login">Sign In</a></li>
-        <li><a href="/login" class="logout">Log Out</a></li>
-      </ul>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Sign In</a></li>
+            <li><a href="/login" class="logout">Log Out</a></li>
+        </ul>
     </nav>
     <section class="container">
-      <header>Registration Form</header>
-      <form action="/registration" method="post" class="form">
-        <div class="input-box">
-          <label>Full Name</label>
-          <input type="text" name="name" placeholder="Enter full name" required />
-        </div>
-        <div class="input-box">
-          <label>Email Address</label>
-          <input type="email" name="email" placeholder="Enter email address" required />
-        </div>
-        <div class="input-box">
-          <label>Password</label>
-          <input type="password" name="password" placeholder="Enter password" required />
-        </div>
-        <button type="submit">Register</button>
-      </form>
-      <button onclick="window.location.href='/login'">User Login</button>
+        <header>Registration Form</header>
+        <form action="/registration" method="post" class="form">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Enter full name" required>
+            </div>
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Enter email address" required>
+            </div>
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Enter password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <button onclick="window.location.href='/login'">User Login</button>
     </section>
-  </body>
+</body>
 </html>
+
